@@ -109,22 +109,10 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DataSet1.xsd</DependentUpon>
     </Compile>
-    <Compile Include="Etat\Attestatio.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Attestatio.rpt</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Etat\Attestation.cs">
-      <SubType>Component</SubType>
-    </Compile>
     <Compile Include="Etat\Attestation1.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Attestation.rpt</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Etat\Emargements.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Etat\Emargements1.cs">
@@ -133,16 +121,10 @@
       <DependentUpon>Emargements.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Etat\ListeAbsences.cs">
-      <SubType>Component</SubType>
-    </Compile>
     <Compile Include="Etat\ListeAbsences1.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>ListeAbsences.rpt</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Etat\Pv.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Etat\Pv1.cs">
@@ -178,10 +160,6 @@
     <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Etat\Attestatio.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>Attestatio.cs</LastGenOutput>
-    </EmbeddedResource>
     <EmbeddedResource Include="Etat\Attestation.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>Attestation1.cs</LastGenOutput>
