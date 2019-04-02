@@ -177,6 +177,11 @@
       <LastGenOutput>Pv1.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Les_Pages_D%27administration\" />
+    <Folder Include="Les_Pages_De_Formateur\" />
+    <Folder Include="Les_Pages_Du_Surviante\" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
