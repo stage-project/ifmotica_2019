@@ -5,13 +5,29 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title></title>
+    <title>Login</title>
 </head>
 <body>
     <form id="form1" runat="server">
-    <div>
-    
-    </div>
+        <table >
+            <tr>
+                <td >Nom Utilisateur</td>
+                <td >
+                    <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+                </td>
+            </tr>
+            <tr>
+                <td >Mot de Passe</td>
+                <td>
+                    <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <asp:Button ID="Button1" runat="server" Text="Connecter"  />
+                </td>             
+            </tr>
+        </table>
     </form>
 </body>
 </html>
