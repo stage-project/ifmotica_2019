@@ -24,7 +24,7 @@
             </tr>
             <tr>
                 <td colspan="2">
-                    <asp:Button ID="Button1" runat="server" Text="Connecter"  />
+                    <asp:Button ID="Button1" runat="server" Text="Connecter" OnClick="Button1_Click"  />
                 </td>             
             </tr>
         </table>
