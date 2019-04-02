@@ -20,22 +20,19 @@ namespace ifmotica_2019
         protected void Button1_Click(object sender, EventArgs e)
         {
             
-            String R1 = "select count(*) from Users where utilisateur='" + TextBox1.Text + "' and MotPasse='" + TextBox2.Text + "'";
+            String R1 = "select count(nom) ,nom,prenom,Etat,compt from Users where utilisateur='"+TextBox1.Text+"' and MotPasse='"+TextBox2.Text+"' group by nom,Prenom,Etat,compt ";
             SqlCommand cmd1 = new SqlCommand(R1, d.ouver());
-            String output = cmd1.ExecuteScalar().ToString();
+            SqlDataReader dr;
+            dr = cmd1.ExecuteReader();
+            while (dr.Read())
+            {
+                Session["User"] = dr[0].ToString() + "  " + dr[1].ToString();
+            }
             d.ferme();
 
             if (output == "1")
             {
-                String R2 = "select Nom,Prenom from Users where utilisateur='" + TextBox1.Text + "' and MotPasse='" + TextBox2.Text + "'";
-                SqlCommand cmd2 = new SqlCommand(R2, d.ouver()); 
-                SqlDataReader dr;
-                dr = cmd2.ExecuteReader();
-                while (dr.Read())
-                {
-                    Session["User"] = dr[0].ToString() + "  " + dr[1].ToString();
-                }
-                d.ferme();
+
                 Response.Write("la connection et bien passer");
                 //Response.Redirect("~/Stagiaires.aspx");
             }
