@@ -42,10 +42,10 @@ namespace ifmotica_2019
         //la rederection des utilisateur a son page master
         public string Redirect(string etat)
         {
-            if(etat=="S")
+            if(etat=="s")
                 return "~/stagiaires.aspx";
-            else if (etat=="AD")
-                return "~/gestion.aspx";
+            else if (etat=="ad")
+                return "~/Les_Pages_De_Formateur/Importer_Les_Notes.aspx";
             else
                 return "~/Note.aspx";
         }
