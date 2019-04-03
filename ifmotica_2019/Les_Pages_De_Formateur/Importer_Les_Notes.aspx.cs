@@ -38,11 +38,7 @@ namespace ifmotica_2019.Les_Pages_De_Formateur
                     }
                     else
                     {
-                        //la taille de fichier
-                        int filesize = FileUploadToServer.PostedFile.ContentLength;
-                        //la taile du fichier excel ne depasse pas 4MB
-                        if (filesize <= 4048576)
-                        {
+
                             //le nom de fichier importer+leur extention Path.GetFileName(Server.MapPath(FileUploadToServer.FileName)) ou filename
                             //le chema de fichier Server.MapPath(FilePath)
                             //le nom dossier pour enregistrer le fichier excel "~/datas/"
@@ -71,12 +67,7 @@ namespace ifmotica_2019.Les_Pages_De_Formateur
                             con.Close();
                             //affichier les donnee sur la datagrid      
                             GridView1.DataSource = ExcelDataSet;
-                            GridView1.DataBind();
-                        }
-                        else
-                        {
-                            lblmsg.Text = "le fichier excel doit etre moins de 1MB";
-                        }
+                            GridView1.DataBind();                      
                     }
 
                 }
