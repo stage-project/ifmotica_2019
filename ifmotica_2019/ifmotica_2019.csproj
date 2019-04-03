@@ -69,7 +69,9 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Les_Pages_D%27administration\gestion.aspx" />
     <Content Include="Les_Pages_De_Formateur\Importer_Les_Notes.aspx" />
+    <Content Include="Les_Pages_Du_Surviante\Stagiaires.aspx" />
     <Content Include="packages.config" />
     <Content Include="DataSet1.xsc">
       <DependentUpon>DataSet1.xsd</DependentUpon>
@@ -141,12 +143,26 @@
     <Compile Include="F.Master.designer.cs">
       <DependentUpon>F.Master</DependentUpon>
     </Compile>
+    <Compile Include="Les_Pages_D%27administration\gestion.aspx.cs">
+      <DependentUpon>gestion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Les_Pages_D%27administration\gestion.aspx.designer.cs">
+      <DependentUpon>gestion.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Les_Pages_De_Formateur\Importer_Les_Notes.aspx.cs">
       <DependentUpon>Importer_Les_Notes.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Les_Pages_De_Formateur\Importer_Les_Notes.aspx.designer.cs">
       <DependentUpon>Importer_Les_Notes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Les_Pages_Du_Surviante\Stagiaires.aspx.cs">
+      <DependentUpon>Stagiaires.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Les_Pages_Du_Surviante\Stagiaires.aspx.designer.cs">
+      <DependentUpon>Stagiaires.aspx</DependentUpon>
     </Compile>
     <Compile Include="Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
@@ -187,8 +203,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Data\" />
-    <Folder Include="Les_Pages_D%27administration\" />
-    <Folder Include="Les_Pages_Du_Surviante\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
